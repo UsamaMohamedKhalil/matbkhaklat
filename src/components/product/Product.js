@@ -29,8 +29,6 @@ const Product = () => {
     setShowFilter(!showFilter);
   }
   return (
-    
-    
     <section>
       <div className={`container ${styles.product}`}>
         <aside className={showFilter ? `${styles.filter} ${styles.show}` : 

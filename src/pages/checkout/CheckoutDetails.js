@@ -119,7 +119,7 @@ return (
                   />
                   <label>الملاحظات :</label>
                   <input type='text'
-                  placeholder=' برجاء ادخال أي تعلقات تخص بالطلب'
+                  placeholder=' برجاء ادخال أي تعلقيات تخص بالطلب'
                   name='comment'
                   required
                   value={shippingAddress.comment}
