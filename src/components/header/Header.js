@@ -15,7 +15,7 @@ import { CALCULATE_TOTAL_QUANTITY, selectCartTotalQuantity } from "../../redux/s
 const Logo = (
   <div className={styles.logo}>
     <Link to="/">
-      <img src="https://i.ibb.co/DY8C8QD/245622433-382780733515733-8671437764547906992-n-removebg-preview.png" alt="المطبخ لأكلات البيتي" style={{width: '7rem'}} />
+      <h2><span>المطبخ</span></h2>
     </Link>
   </div>
 )
@@ -115,7 +115,7 @@ const Header = () => {
               <Link to='/admin/home'>
               <li>
                 <button className="--btn --btn-primary ">
-                  Admin
+                  الأدمن
                 </button>
               </li>
               </Link>
@@ -138,7 +138,7 @@ const Header = () => {
                 <ShowOnLogin>
                   <a href="#home" style={{color:"#ff7722"}}>
                     <FaUserCircle size={16} />
-                    Hi, {displayName}
+                    {displayName}  
                   </a>
                 </ShowOnLogin>
                 <ShowOnLogin>

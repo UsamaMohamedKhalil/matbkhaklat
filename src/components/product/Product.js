@@ -6,7 +6,7 @@ import spinnerImg from '../../assests/spinner.gif'
 import styles from './Product.module.scss'
 import ProductFilter from './productFilter/ProductFilter';
 import ProductList from './productList/ProductList';
-import { FaCogs } from 'react-icons/fa';
+import { MdRestaurantMenu } from 'react-icons/md';
 
 const Product = () => {
   const {data , isLoading} = useFetchCollection('products');
@@ -41,10 +41,10 @@ const Product = () => {
             <ProductList products={products} />
           ) }
           <div className={styles.icon} onClick={toggleFilter}>
-            <FaCogs size={20} color='orangered'
+            <MdRestaurantMenu size={20} color='orangered'
             />
             <p>
-              <b>{showFilter ? 'Hide Filter' : 'Show Filter'}</b>
+              <b>{showFilter ? 'إخفاء المنيو' : 'المنيو'}</b>
             </p>
           </div>
         </div>

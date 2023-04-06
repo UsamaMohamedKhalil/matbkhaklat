@@ -156,7 +156,7 @@ const AddProduct = () => {
     <>
     {isLoading && <Loader />}
       <div className={styles.product}>
-      <h2>{detectForm(id,"Add New product" , "Edit Product")}</h2>
+      <h2>{detectForm(id,"أضف طلب جديد" , "عدل علي طلبك")}</h2>
       <Card className={styles.card}>
         <form onSubmit={detectForm(id,addProduct,editProduct)}>
           <label>
@@ -218,7 +218,7 @@ const AddProduct = () => {
             cols='30' row='10'
             >
             </textarea>
-            <button className='--btn --btn-primary'>{detectForm(id,'Add Product' , 'Edit Product')}</button>
+            <button className='--btn --btn-primary'>{detectForm(id,'أضف' , 'عدل')}</button>
         </form>
       </Card>
     </div>

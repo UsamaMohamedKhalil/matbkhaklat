@@ -121,7 +121,7 @@ return (
                   <input type='text'
                   placeholder=' برجاء ادخال أي تعلقيات تخص بالطلب'
                   name='comment'
-                  required
+                  
                   value={shippingAddress.comment}
                   onChange={(e)=>handelShipping(e)}
                   />
@@ -129,7 +129,7 @@ return (
                   <input type='text'
                   placeholder='ادخل كود الخصم'
                   name='pCode'
-                  required
+                  
                   value={shippingAddress.pCode}
                   onChange={(e)=>handelShipping(e)}
                   />

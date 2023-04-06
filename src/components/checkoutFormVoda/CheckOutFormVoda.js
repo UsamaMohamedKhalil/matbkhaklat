@@ -113,7 +113,7 @@ const handelSubmit = (e) =>{
 return (
    <section>
    <div className={`container ${styles.checkout}`}>
-   <h2>Pay with vodaphone cash</h2>
+   <h2>الدفع من خلال فودافون كاش</h2>
       <form onSubmit={handelSubmit}>
       <div>
          <Card cardClass={styles.card}>
@@ -163,7 +163,7 @@ return (
             <input type='text'
             placeholder='ادخل كود الخصم'
             name='pCode'
-            required
+            
             value={shippingAddress.pCode}
             onChange={(e)=>handelShipping(e)}
             />
@@ -171,7 +171,7 @@ return (
             <input type='text'
             placeholder=' برجاء ادخال اي تعلقيات تخص الطلب'
             name='comment'
-            required
+            
             value={shippingAddress.comment}
             onChange={(e)=>handelShipping(e)}
             />
