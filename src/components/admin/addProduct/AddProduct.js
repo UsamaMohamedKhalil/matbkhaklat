@@ -26,6 +26,7 @@ const categories = [
   { id: 12, name:"مجمدات" },
   { id: 13, name:"وجبات رمضان" },
   { id: 14, name:"عروض اليوم" },
+  { id: 15, name:'كحك العيد' },
 ]; 
 const initailState = {
   name:'',

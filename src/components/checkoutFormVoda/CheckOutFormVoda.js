@@ -113,7 +113,7 @@ const handelSubmit = (e) =>{
 return (
    <section>
    <div className={`container ${styles.checkout}`}>
-   <h2>الدفع من خلال فودافون كاش</h2>
+   <h2>(01032440609)الدفع من خلال فودافون كاش</h2>
       <form onSubmit={handelSubmit}>
       <div>
          <Card cardClass={styles.card}>
