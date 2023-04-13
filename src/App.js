@@ -39,7 +39,6 @@ function App() {
             </AdminOnlyRoute> } />
               <Route path="/product-details/:id" element={<ProductDetails />} />
           </Routes>
-       <Footer />
        </BrowserRouter>
     </>
   );

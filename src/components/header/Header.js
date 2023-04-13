@@ -8,7 +8,6 @@ import { onAuthStateChanged, signOut } from "firebase/auth";
 import { toast } from 'react-toastify';
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import logoImg from '../../assests/logamr.png';
 import { SET_ACTIVE_USER , REMOVE_ACTIVE_USER} from '../../redux/slice/authSlice'
 import ShowOnLogin, { ShowOnLogout } from "../hiddenLink/hiddenLink";
 import { AdminOnlyLink } from "../adminOnlyRoute/AdminOnlyRoute";
@@ -16,7 +15,7 @@ import { CALCULATE_TOTAL_QUANTITY, selectCartTotalQuantity } from "../../redux/s
 const Logo = (
   <div className={styles.logo}>
     <Link to="/">
-      <img src={logoImg} style={{width: '110px'}}/>
+      <h2><span>المطبخ</span></h2>
     </Link>
   </div>
 )
