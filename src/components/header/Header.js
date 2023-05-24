@@ -15,7 +15,7 @@ import { CALCULATE_TOTAL_QUANTITY, selectCartTotalQuantity } from "../../redux/s
 const Logo = (
   <div className={styles.logo}>
     <Link to="/">
-      <h2><span>المطبخ</span></h2>
+      <h2><span>level up</span></h2>
     </Link>
   </div>
 )
@@ -123,7 +123,7 @@ const Header = () => {
 
               <li>
                 <NavLink to='/' className={activeLink}>
-                  المنيو
+                  level up 
                 </NavLink>
               </li>
               <li>

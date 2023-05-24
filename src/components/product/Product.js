@@ -41,10 +41,9 @@ const Product = () => {
             <ProductList products={products} />
           ) }
           <div className={styles.icon} onClick={toggleFilter}>
-            <MdRestaurantMenu size={20} color='orangered'
-            />
+       
             <p>
-              <b>{showFilter ? 'إخفاء المنيو' : 'المنيو'}</b>
+              <b>{showFilter ? 'إخفاء المصنفات' : 'المصنفات'}</b>
             </p>
           </div>
         </div>

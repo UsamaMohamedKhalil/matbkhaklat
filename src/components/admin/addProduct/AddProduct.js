@@ -12,21 +12,9 @@ import Loader from '../../loader/Loader';
 import styles from './AddProduct.module.scss';
 
 const categories = [
-  { id: 1, name: "المشويات" },
-  { id: 2, name: "الخضار المتفرز" },
-  { id: 3, name: "سمبوسك" },
-  { id: 4, name: "الدجاج" },
-  { id: 5, name: "حمام" },
-  { id: 6, name: "كروكيت" },
-  { id: 7, name: "بشاميل" },
-  { id: 8, name: "رقاق" },   
-  { id: 9, name: "مكرونات" }  ,
-  { id: 10, name: "بط" },
-  { id: 11, name: "خضار متفرز" },
-  { id: 12, name:"مجمدات" },
-  { id: 13, name:"وجبات رمضان" },
-  { id: 14, name:"عروض اليوم" },
-  { id: 15, name:'كحك العيد' },
+  { id: 1, name: "كروت بأسمك" },
+  { id: 2, name: " كروت level up" },
+  { id: 3, name: "التوزيع" },
 ]; 
 const initailState = {
   name:'',

@@ -1,6 +1,6 @@
 import { addDoc, collection, Timestamp } from 'firebase/firestore';
 import { getDownloadURL, ref, uploadBytesResumable } from 'firebase/storage';
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -12,6 +12,7 @@ import { CALC_TOTAL_ORDER_AMOUNT } from '../../redux/slice/orderSlice';
 import Card from '../card/Card'
 import CheckoutSummary from '../checkoutSummary/CheckoutSummary'
 import styles from './CheckOutFormVoda.module.scss'
+import emailjs from '@emailjs/browser';
 
 
 
@@ -36,6 +37,7 @@ const CheckOutFormVoda = () => {
    const [shippingAddress, setShippingAddress] = useState({
       ...initialAddressState,
    });
+   const form = useRef();
 
    const dispatch = useDispatch();
    const navigate = useNavigate();
@@ -51,6 +53,7 @@ const CheckOutFormVoda = () => {
          [name] : value
       });
    };
+
 
 
    const handelImageChange = (e) => {
@@ -95,7 +98,6 @@ const CheckOutFormVoda = () => {
    }
    try{
       addDoc(collection(db, "orders"), orderConfig);
-
       dispatch(CLEAR_CART());
       toast.success("تم حفظ الطلب");
 
@@ -106,6 +108,14 @@ const CheckOutFormVoda = () => {
 }
 const handelSubmit = (e) =>{
    e.preventDefault();
+   emailjs.sendForm('service_0awc3i5', 'template_z08fe3s', form.current,
+     'pPKIi0NDzCO94iYEo')
+   .then((result) => {
+       console.log(result.text);
+       console.log('send');
+   }, (error) => {
+       console.log(error.text);
+   });
    dispatch(SAVE_SHIPPING_ADDRESS(shippingAddress))
    saveOrder();
 };
@@ -113,8 +123,8 @@ const handelSubmit = (e) =>{
 return (
    <section>
    <div className={`container ${styles.checkout}`}>
-   <h2>(01032440609)الدفع من خلال فودافون كاش</h2>
-      <form onSubmit={handelSubmit}>
+   <h2>(01094745972)الدفع من خلال فودافون كاش</h2>
+      <form onSubmit={handelSubmit} ref={form}>
       <div>
          <Card cardClass={styles.card}>
             <h3>طلبك عندنا في اسرع وقت</h3>

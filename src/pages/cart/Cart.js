@@ -139,27 +139,15 @@ function Cart() {
                     </Link>
                   </div>
                   <br />
+  
                   <Card cardClass={styles.card}>
                     <p><b>{`عدد الطلبات: ${cartTotalQuantity}`}</b></p>
                     <div className={styles.text}>
                       <h4>اجمالي:</h4>
                       <h3>{`جنية${cartTotalAmount.toFixed(2)}`}</h3>
                     </div>
-                    <p>يستغرق الطلب من ساعة الي ساعتين</p>
-                    <p>يضاف علي الطلب سعر التوصيل 15 جنية</p>
-                    <p>يضاف علي الطلب سعر التوصيل 35 جنية في حالة التوصيل الي العجمي</p>
-                    <button className='--btn --btn-primary --btn-block'
-                      onClick={()=>checkOut()}>عند الاستلام</button>
-                  </Card>
-                  <Card cardClass={styles.card}>
-                    <p><b>{`عدد الطلبات: ${cartTotalQuantity}`}</b></p>
-                    <div className={styles.text}>
-                      <h4>اجمالي:</h4>
-                      <h3>{`جنية${cartTotalAmount.toFixed(2)}`}</h3>
-                    </div>
-                    <p>يستغرق الطلب من ساعة الي ساعتين</p>
-                    <p>   يضاف علي الطلب سعر التوصيل 15 جنية</p>
-                    <p>يضاف علي الطلب سعر التوصيل 35 جنية في حالة التوصيل الي العجمي</p>
+                    <p>الشحن إلي الاسكندرية 35ج </p>
+                    <p> الشحن إلي القاهرة 60ج</p>
                     <button className='--btn --btn-danger --btn-block'
                       onClick={()=>checkOutVodaFone()}>فودافون كاش</button>
                   </Card>

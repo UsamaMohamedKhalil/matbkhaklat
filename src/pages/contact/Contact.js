@@ -18,11 +18,11 @@ const Contact = () => {
           <div className={styles.icons}>
             <span>
               <FaPhoneAlt />
-              <p>01200940042</p>
+              <p>01094745972</p>
             </span>
             <span>
               <FaEnvelope />
-              <p>elmatbkhaklat@gmail.com</p>
+              <p>osamaharbii55@gmail.com</p>
             </span>
             <span>
               <GoLocation />
